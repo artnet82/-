@@ -97,6 +97,8 @@ for epoch in range(num_epochs):
     print(f"Epoch {epoch+1}/{num_epochs}, Loss: {average_loss:.4f}")
 
 # Сохранение обученной модели
-output_dir = "path/to/save/model"
-model.save_pretrained(output_dir)
+model_name = "nemtyrevai_model"  # Название модели
+model_path = "path/to/save/model"  # Путь для сохранения модели
+model.save_pretrained(model_path)
+
 tokenizer.save_pretrained(output_dir)
