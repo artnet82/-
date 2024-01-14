@@ -6,7 +6,7 @@ from transformers import GPT2LMHeadModel, GPT2Tokenizer
 # Определение класса датасета для обучения модели
 class ChatDataset(Dataset):
     def __init__(self, conversations, tokenizer, max_length):
-        self.conversations = conversations
+        self.conversations = conversations 
         self.tokenizer = tokenizer
         self.max_length = max_length
 
