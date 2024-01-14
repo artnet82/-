@@ -101,4 +101,6 @@ model_name = "nemtyrevai_model"  # Название модели
 model_path = "path/to/save/model"  # Путь для сохранения модели
 model.save_pretrained(model_path)
 
-tokenizer.save_pretrained(output_dir)
+# Сохранение токенизатора
+tokenizer_path = "path/to/save/tokenizer"  # Путь для сохранения токенизатора
+tokenizer.save_pretrained(tokenizer_path)
